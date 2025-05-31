@@ -1,37 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>internal css</title>
-  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Styled Paragraphs</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 2rem;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    .navy-text {
+      color: navy;
+      font-weight: bold;
+    }
+
+    .highlight {
+      background-color: lightyellow;
+      padding: 1rem;
+      border-left: 4px solid gold;
+    }
+
+    .modern-font {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .large-text {
+      font-size: 18px;
+    }
+
+    .semi-bold {
+      font-weight: 600;
+    }
+
+    .oblique {
+      font-style: oblique;
+    }
+
+    .strikethrough {
+      text-decoration: line-through;
+      color: crimson;
+    }
+
+    .right-align {
+      text-align: right;
+    }
+
+    .condensed {
+      letter-spacing: -1px;
+    }
+
+    .spaced {
+      word-spacing: 2px;
+    }
+
+    .lowercase {
+      text-transform: lowercase;
+    }
+
+    .indented {
+      text-indent: 2em;
+      text-shadow: 2px 2px 4px #888888;
+    }
+
+    .preformatted {
+      white-space: pre;
+      background-color: #eee;
+      padding: 0.5rem;
+      border-radius: 5px;
+    }
+
+    .small-caps {
+      font-variant-caps: all-small-caps;
+    }
+
+    .shadow {
+      text-shadow: 2px 2px 4px #888888;
+    }
+
+    .purple {
+      color: #800080;
+    }
+
+    .transparent-bg {
+      background-color: rgba(0, 0, 255, 0.3);
+      padding: 0.5rem;
+      border-radius: 4px;
+    }
+
+    .classic-serif {
+      font-family: Georgia, "Times New Roman", Times, serif;
+    }
+
+    .overline {
+      text-decoration: overline;
+    }
+  </style>
 </head>
 <body>
-    
-    <p style="color:navy;">deep blue sea</p>
-    <p style="background-color:lightyellow ;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, fuga nemo omnis animi dolores modi eius atque corporis. Totam molestiae esse aliquam doloremque ex debitis quisquam aut laudantium voluptatem consequatur modi magni adipisci eveniet quae eligendi autem mollitia magnam, ratione quam ea! Fuga vel pariatur assumenda nulla doloremque adipisci quo deserunt odio quod? Ab dolor sapiente, expedita eius praesentium possimus a facilis tenetur? Minus, quisquam magnam distinctio odit sit, id quas consequatur autem, accusamus aliquam impedit ullam molestiae velit atque sint deserunt sunt veritatis voluptas aspernatur commodi vero ipsum nesciunt? Quo unde quisquam, deleniti vero neque itaque ea iste laborum?
-    </p>
-    <p style="font-family:generic, sans-serif;">modern font style</p>
-    <p style="font-size:18px;">slightly large</p>
-    <p style="font-weight:600px;">notice this</p>
-    <p style="font-style:oblique;">slanetd tex</p>
-    <p style="text-decoration: line-through;">old price:$100</p>
-    <P style="text-align:right;">chapter end</P>
-    <p style="line-height:1.5;">this is third line</p>
-    <P style="letter-spacing:-1px;">CONDENSED</P>
-    <p style="word-spacing:2px;">A bit more space</p>
-    <P style="text-transform:lowercase ;">CONVERT THIS TO LOWERCASE</P>
-    <p style="text-indent:2em;text-shadow:2px 2px 4px #888888;"> the first line of this paragraph should be indented.subsequent lines will stsrt from the normal margin.this is a common typographic practice for starting new paragraphs im a block of text. </p>
-    <p style="white-space:pre;">this text has extra spaces.and this is a new lines.and this line is indented with spaces </p>
-    <P style="font-variant-caps:all-small-caps;">Fancy Title Here</P>
-    <P style="text-shadow: 2px 2px 4px#888888;">shadow text</P>
-    <p style="color:#800080;">purple majesty</p>
-    <P style="background-color:rgb(0,0,255,0.3);">this paragraph has a see-through blue background</P>
-    <p style="font-family: Georgia, 'Times New Roman', Times, serif;">
-  Classic serif text
-</p>
-<p style="text-decoration:overline;">heading line above</p>
+
+  <p class="navy-text">Deep blue sea</p>
+
+  <p class="highlight">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, fuga nemo omnis animi dolores modi eius atque corporis.
+    Totam molestiae esse aliquam doloremque ex debitis quisquam aut laudantium voluptatem consequatur modi magni adipisci eveniet
+    quae eligendi autem mollitia magnam, ratione quam ea!
+  </p>
+
+  <p class="modern-font">Modern font style</p>
+
+  <p class="large-text">Slightly large text</p>
+
+  <p class="semi-bold">Notice this</p>
+
+  <p class="oblique">Slanted text</p>
+
+  <p class="strikethrough">Old price: $100</p>
+
+  <p class="right-align">Chapter end</p>
+
+  <p style="line-height: 1.5;">This is third line</p>
+
+  <p class="condensed">CONDENSED</p>
+
+  <p class="spaced">A bit more space</p>
+
+  <p class="lowercase">CONVERT THIS TO LOWERCASE</p>
+
+  <p class="indented">
+    The first line of this paragraph should be indented. Subsequent lines will start from the normal margin. This is a common
+    typographic practice for starting new paragraphs in a block of text.
+  </p>
+
+  <p class="preformatted">
+this text has extra spaces.   and this is a new line.   and this line is indented with spaces    
+  </p>
+
+  <p class="small-caps">Fancy Title Here</p>
+
+  <p class="shadow">Shadow text</p>
+
+  <p class="purple">Purple majesty</p>
+
+  <p class="transparent-bg">This paragraph has a see-through blue background</p>
+
+  <p class="classic-serif">Classic serif text</p>
+
+  <p class="overline">Heading line above</p>
 
 </body>
-
 </html>
